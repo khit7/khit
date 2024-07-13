@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Location</title>
+    <style>
+        /* Optional: You can style the map container */
+        #map {
+            height: 400px; /* Adjust height as needed */
+            width: 100%; /* Full width */
+        }
+    </style>
+</head>
+<body>
+    <img src="imgs/KHIT_BR4.jpg" alt="" width="100%"></img>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Add your API key here -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+<h2 style="text-align:center">This page is Under maintenance</h2>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of the center (e.g., latitude and longitude)
+            var center = { lat: 40.712776, lng: -74.005974 }; // New York City coordinates
+
+            // The map, centered at the specified location
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 12, center: center });
+
+            // Optional: You can add a marker at a specific location
+            var marker = new google.maps.Marker({ position: center, map: map });
+        }
+    </script>
+</body>
+</html>
