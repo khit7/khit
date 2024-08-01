@@ -3,7 +3,6 @@
 <head>
    <meta charset="UTF-8">
    <title>Events</title>
-   <link rel="icon" type="image" href="KHIT.jpg">
    <style>
       body{
          background-color:lightblue;
@@ -30,11 +29,57 @@
          margin:0px;
          padding:0px;
       }
+      
+      .ani {
+  display: inline-block;
+  position: relative;
+  color:#fff;
+}
+
+.ani:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.ani:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+      nav {
+       
+        background-color: #333;
+            color: #fff;
+           
+          text-align:center;
+            
+         
+         
+        }
+        nav a {
+            font-family:;
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size:20;
+        }
    </style>
 </head>
 <body>
    <img src="eve.jpg" alt="" width="100%"></img><br><br>
-   
+   <br>
+   <nav>
+          <a href="index.html" class="ani">Home</a>  &gt;&gt; <a href="camp.html" class="ani">Campus Life</a>  &gt;&gt;  <a href="event.html" class="ani">EVENTS</a>
+       </nav>
+	<br>
    
    <div>
     <center><h3>SAMKALP</h3><br>
@@ -63,7 +108,7 @@ The main aim of the techno cultural fest "SAMKALP" is to bring together innovati
    </div><br>
    
    <footer>
-   <img src="cse_br2.jpg" alt="" width="100%"></img>
+   <img src="br7.jpg" alt="" width="100%"></img>
    </footer>
 </body>
 </html>
