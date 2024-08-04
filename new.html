@@ -1,29 +1,22 @@
 <?php
-// Configuration
 $servername = 'localhost:3306';
 $username = 'root';
 $password = '';
 $database = 'std';
 
-// Create connection
 $mysqli = new mysqli($servername, $username, $password, $database);
 
-// Check connection
 if ($mysqli->connect_error) {
     die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
 
-// SQL query
-$sql = "SELECT * FROM std_dt ORDER BY PIN";
+$sql = "SELECT * FROM std_dt ORDER BY PIN;";
 
-// Prepare and execute the query
 $stmt = $mysqli->prepare($sql);
 $stmt->execute();
 
-// Get the results
 $result = $stmt->get_result();
 
-// Close the statement and connection
 $stmt->close();
 $mysqli->close();
 ?>
