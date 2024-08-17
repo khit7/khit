@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::KHIT::</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101720;
+            color:#111619;
+        }
+        header {
+            
+            color: #ffffff;
+            padding: ;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: #ffffff;
+            padding: 100px 20px;
+            text-align: center;
+            height: 300px;
+            position: relative;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 4em;
+            color:#182926;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+        .sports-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sports-item {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px 0;
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
+        }
+        .sports-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .sports-item h3 {
+            padding: 15px;
+            margin: 0;
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        .sports-item p {
+            padding: 15px;
+            margin: 0;
+            color: #333;
+        }
+        footer {
+            background-color: #0056b3;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .nv{
+           height:2px;
+           background-color:red;
+        }
+        
+        .bar {
+       
+        background-color: #333;
+            color: #fff;
+          text-align:center;
+          text-align:center;
+            
+         
+         
+        }
+        .bar a {
+            font-family:;
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size:20;
+        }
+        .ani {
+  display: inline-block;
+  position: relative;
+  color:#fff;
+}
+
+.ani:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.ani:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+    </style>
+</head>
+<body>
+    <header><br>
+        <img src="imgs/sp_br.jpg" alt="" width="100%"></img> <br>
+    </header>
+    <div class="nv"></div><br><br>
+   <nav class="bar">
+          <a href="clg.html" class="ani">Home</a>  || <a href="camp.html" class="ani">Campus Life</a>  ||  <a href="dept.html" class="ani">Department</a>  ||  <a href="con.html" class="ani">Contact</a>  ||  <a href=""></a>
+       </nav>
+       <br>
+
+    <div class="hero">
+        <h1>Welcome to Our <br>Sports Program</h1>
+      
+    </div>
+
+    <div class="container">
+        <section class="sports-grid">
+            <div class="sports-item" id="football">
+                <img src="imgs/sp2.jpg" alt="Football">
+                <h3>Cricket</h3>
+                <p>We offer students a platform for networking and pursuing their passion for cricket. We foster excellent networking opportunities, enable members to connect with like-minded peers and represent the KHIT Colelge at District and Statelevels.</p>
+            </div>
+            <div class="sports-item" id="basketball">
+                <img src="imgs/sp3.jpg" alt="Basketball">
+                <h3>Basketball</h3>
+                <p>Be part of our dynamic basketball team. We have professional coaches and excellent facilities for training.</p>
+            </div>
+            <div class="sports-item" id="soccer">
+                <img src="imgs/sp4.jpg" alt="">
+                <h3>Carrom</h3>
+                <p>Students spend their leisure time by playing indoor games like Chess, Carrom, and Foosball in hostel’s recreational and common rooms. Such activities inculcate the attitude of team bonding and provide a chance to relax their minds at the same time.</p>
+            </div>
+            <div class="sports-item" id="soccer">
+                <img src="imgs/sp5.jpg" alt="TT">
+                <h3>Table tennis</h3>
+                <p>campus are equipped with recreational table tennis set up in its common rooms. Students can spend their free time by playing table tennis which is a great way to bond with fellow hostel mates.</p>
+            </div>
+             <div class="sports-item" id="chess">
+                <img src="imgs/sp6.jpg" alt="Chess">
+                <h3>Chess</h3>
+                <p>Students spend their leisure time by playing indoor games like Chess, Carrom. Such activities inculcate the attitude of team bonding and provide a chance to relax their minds at the same time.</p>
+            </div>
+        </section>
+    </div> <br>
+
+
+    <footer>
+        &copy; 2024 KHIT. All rights reserved.
+    </footer>
+</body>
+</html>
