@@ -95,6 +95,7 @@ nav {
     padding:5px;
     
  }
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfFvCwqAAAAACa7hl7uTR7qXvvLC42jsZvR2Aye"></script>
 </style>
    </head>
    <body>
@@ -116,7 +117,7 @@ nav {
        <div class="dpt"><br>
 <ul>
  <a href="log.html" class="ani"><li>Student Login</li></a><br><br>
-<a href="http://khit3.000.pe/" class="ani"><li>Students List</li></a><br><br>
+<a href="http://khit3.000.pe/" class="ani" id="dt"><li>Students List</li></a><br><br>
 <a href="" class="ani"><li>Results</li></a><br><br>
 <a href="" class="ani"><li>Previous Question<br> Papers (PQP)</li></a><br><br>
 <a href="st_cor.html" class="ani"><li>Student Corner</li></a><br><br>
@@ -142,5 +143,14 @@ nav {
  <footer>
     <img src="cse_br2.jpg" alt="" width="100%"></img>
  </footer>
+   
+<script>
+  function onClick(dt) {
+    dt.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LfFvCwqAAAAACa7hl7uTR7qXvvLC42jsZvR2Aye', {action: 'LOGIN'});
+    });
+  }
+</script>
    </body>
 </html>
