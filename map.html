@@ -3,44 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Location</title>
+    <title>Contact Us - College</title>
     <style>
-        /* Optional: You can style the map container */
-        #map {
-            height: 400px; /* Adjust height as needed */
-            width: 100%; /* Full width */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .contact-info div {
+            width: 45%;
+        }
+        .contact-info h2 {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+        .contact-info p {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .map {
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <img src="imgs/KHIT_BR4.jpg" alt="" width="100%"></img>
-
-    <!-- Map container -->
-    <div id="map"></div>
-
-    <!-- Add your API key here -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
-
-     <iframe src="intent://www.google.com/maps/place//data=!4m2!3m1!1s0x3a4a76f082383d8f:0x8545c11795f964d8!11m1!4b1?entry=s&sa=X&ved=2ahUKEwjX8b29tYiIAxUVR2wGHVd5MbgQ_BJ6BAgnEAI#Intent;scheme=http;package=com.google.android.apps.maps;S.browser_fallback_url=https://www.google.com/maps/place//data%3D!4m2!3m1!1s0x3a4a76f082383d8f:0x8545c11795f964d8!11m1!4b1%3Fentry%3Ds&sa%3DX&ved%3D2ahUKEwjX8b29tYiIAxUVR2wGHVd5MbgQ4kB6BAgTEAA;end" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <header>
+        <div class="container">
+            <h1>College Name</h1>
+        </div>
+    </header>
     
+    <div class="container">
+        <section class="contact-info">
+            <div>
+                <h2>Contact Details</h2>
+                <p><strong>Address:</strong> Near Kallam Spinning Mills Limited, Guntur-Chennai Hwy, Dasaripalem, Andhra Pradesh 522019</p>
+                <p><strong>Phone:</strong> 98856 04528</p>
+                <p><strong>Email:</strong> kaesguntur@gmail.com</p>
+            </div>
+            <div>
+                <h2>Office Hours</h2>
+                <p><strong>Monday - Saturday:</strong> 10:00 AM - 05:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </section>
+        
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/place//data%3D!4m2!3m1!1s0x3a4a76f082383d8f:0x8545c11795f964d8!11m1!4b1%3Fentry%3Ds&sa%3DX&ved%3D2ahUKEwjG8ubmuoiIAxWtT2wGHUyjEagQ4kB6BAgTEAA" allowfullscreen></iframe>
+        </section>
+    </div>
     
-<h2 style="text-align:center">This page is Under maintenance</h2>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of the center (e.g., latitude and longitude)
-            var center = { lat: 40.712776, lng: -74.005974 }; // New York City coordinates
-
-            // The map, centered at the specified location
-            var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 12, center: center });
-
-            // Optional: You can add a marker at a specific location
-            var marker = new google.maps.Marker({ position: center, map: map });
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 KHIT. All rights reserved.</p>
+    </footer>
 </body>
 </html>
