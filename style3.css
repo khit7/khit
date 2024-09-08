@@ -1,0 +1,63 @@
+table,
+        th,
+        td {
+            border: 1px solid rgb(71, 44, 44);
+            border-collapse: collapse;
+           text-align:center ; 
+           padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+nav {
+       
+        background-color: #333;
+            color: #fff;
+           padding: 5px;
+          text-align:center;
+            
+         
+         
+        }
+        nav a {
+            font-family:;
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size:20;
+        }
+
+#id{
+  color: #a0a0a0;
+  text-decoration: none;
+  padding: 0 20px;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: 0.2s;
+}
+
+#id::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: yellowgreen;
+  transition: 0.5s linear;
+}
+#id:hover {
+  color: #fff;
+}
+#id:hover:after {
+  width: 100%;
+}

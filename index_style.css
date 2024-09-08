@@ -1,0 +1,91 @@
+      
+      body{
+         background-color: #101720;
+         color: #fff;
+         
+      }
+#mydiv{
+    height: 300px;
+    width: 270px;
+  margin: auto;
+ 
+  box-shadow: 0 0 10px 0 lightblue inset, 0 0 10px 4px lightblue ;
+
+
+  border: 2px solid black;
+}
+.ksk{
+   
+}
+nav {
+       
+        background-color: #333;
+            color: #fff;
+           padding: 5px;
+          text-align:center;
+            
+         
+         
+        }
+        nav a {
+            font-family:;
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size:20;
+        }
+
+header {
+            
+           
+            padding: 0px 20px;
+            position: fixed;
+            width: 100%;
+            transition: top 0.3s;
+        }
+
+        header.fixed {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        
+        }
+
+        .btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius:0.6em;
+  color: $red;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+}
+.third {
+    border-color:lightblue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px lightblue inset, 0 0 0 0 $blue;
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 lightblue inset, 0 0 10px 4px lightblue;
+    }
+  }
