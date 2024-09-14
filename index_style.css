@@ -58,7 +58,7 @@ header {
   background-color: transparent;
   border: 2px solid $red;
   border-radius:0.6em;
-  color: $red;
+  color: #fff;
   cursor: pointer;
   display: flex;
   align-self: center;
