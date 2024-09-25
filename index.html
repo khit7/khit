@@ -73,6 +73,27 @@ div a{
    text-decoration:none;
    color:#fff;
 }
+        .popup-content { 
+  background-color: #fefefe; 
+  margin: 15% auto; 
+  padding: 20px; 
+  border: 1px solid #888; 
+  width: 50%; 
+} 
+ 
+.close-button { 
+  color: #aaa; 
+  float: right; 
+  font-size: 28px; 
+  font-weight: bold; 
+} 
+ 
+.close-button:hover, 
+.close-button:focus { 
+  color: black; 
+  text-decoration: none; 
+  cursor: pointer; 
+} 
     </style>
 
 
@@ -116,6 +137,12 @@ s0.parentNode.insertBefore(s1,s0);
     
    <!-- <center><b style="font-family:cursive; color:#fff; font-size:22;">DEPT. OF COMPUTER SCIENCE AND ENGINEERING</b></center> -->
     <br>
+   <div id="popup-container" class="popup-container"> 
+  <div class="popup-content"> 
+    <span class="close-button">&times;</span> 
+    <img src="ex_nt24.jpg" alt=""> 
+  </div> 
+</div> 
     <div style="color:#fff; border:2px solid #333; padding:5px;">
     <h2 style="text-align:center">News & Notifications:</h2>
        <marquee>
@@ -137,7 +164,24 @@ s0.parentNode.insertBefore(s1,s0);
     
     
         
-    
+    <script>
+   window.onload = function() { 
+  var popupContainer = document.getElementById("popup-container"); 
+  var closeButton = document.getElementsByClassName("close-button")[0]; 
+ 
+  popupContainer.style.display = "block"; 
+ 
+  closeButton.onclick = function() { 
+    popupContainer.style.display = "none"; 
+  } 
+ 
+  window.onclick = function(event) { 
+    if (event.target == popupContainer) { 
+      popupContainer.style.display = "none"; 
+    } 
+  } 
+} 
+      </script>
 
     
    
